@@ -11,8 +11,8 @@
 
   </head>
   <body>
-      
-    <h1>Biglietto Treno</h1>
+    <div class="container">
+    <h1 class="my-3">Biglietto Treno</h1>
     <form id="form" action="#">
         <div class="mb-3">
           <label for="numKill" class="form-label">Inserisci il numero di kilometri da percorrere</label>
@@ -24,8 +24,21 @@
         </div>
         <button type="submit" class="btn btn-primary">Submit</button>
       </form>
-    
 
+      <hr>
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">Biglietto #</th>
+            <th scope="col">Km da percorrere</th>
+            <th scope="col">età</th>
+            <th scope="col">Prezzo finale</th>
+          </tr>
+        </thead>
+        <tbody id="tbo">
+        </tbody>
+      </table>
+    </div>
     <script src="script.js" ></script>
   </body>
 </html>
